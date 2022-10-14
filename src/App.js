@@ -18,6 +18,8 @@ function App() {
       </div>
 
       {/* <Slider /> */}
+      {/* <Slider /> */}
+      {/* <Slider /> */}
     </>
   );
 }
