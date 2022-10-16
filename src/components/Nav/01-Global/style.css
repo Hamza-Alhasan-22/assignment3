@@ -1,5 +1,17 @@
-.matter-logo {
+.nav-bar-div {
+    /* position: fixed;
+    z-index: 9; */
+    display: flex;
+    padding-left: 10.4%;
+    padding-right: 10.4%;
+    background: white;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+#matter {
     opacity: 1;
+    /* color: rgba(82, 82, 82, 1); */
     color: rgb(3, 3, 3);
     font-family: "MarkPro";
     font-size: 36px;
@@ -8,11 +20,32 @@
     letter-spacing: 0px;
     text-align: left;
     line-height: 60px;
+    padding-right: 9.8%;
 }
 
-.title {
+.title-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container > * {
+    display: block;
+    margin: 0;
+    margin-left: 2vw;
+}
+
+/* .arrow-down{
+    
+} */
+
+.title-button-txt {
     opacity: 1;
-    color: rgb(51, 51, 58);
+    color: rgba(51, 51, 58, 1);
     font-family: "ProximaNova-Semibold";
     font-size: 12px;
     font-weight: 600;
@@ -21,7 +54,14 @@
     text-align: left;
     line-height: 40px;
     text-transform: uppercase;
+
+    border: none;
+    background-color: white;
+    padding-right: 10%;
 }
-.nav-bar-div{
-    position: fixed;
+.login{
+    padding-right: 0;
+}
+.title-button:hover,.title-button:active{
+
 }

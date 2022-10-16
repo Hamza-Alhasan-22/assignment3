@@ -1,67 +1,55 @@
 import React from 'react';
 import "./style.css";
-import { Navbar, Container, Nav, Button, Form, NavDropdown, Col, Row } from "react-bootstrap"
-import { BsFillBagFill,BsSearch} from 'react-icons/bs';
-import {MdFavoriteBorder} from 'react-icons/md';
+// import { Navbar, Container, Nav, Button, Form, NavDropdown, Col, Row } from "react-bootstrap"
+import { BsFillBagFill, BsSearch } from 'react-icons/bs';
+import { MdFavoriteBorder } from 'react-icons/md';
+import { GoArrowSmallDown } from 'react-icons/go';
 
 function Global() {
-    const navBar = {
-        'titles': [
-            {
-                'title': 'SHOP',
-                'options': ['option1', 'option2']
-            },
-            {
-                'title': 'FABRIC',
-                'options': ['option1', 'option2']
-            },
-            {
-                'title': 'JOURNAL',
-                'options': ['option1', 'option2']
-            },
-            {
-                'title': 'ABOUT',
-                'options': ['option1', 'option2']
-            }
-        ]
-    };
-    var i = 1;
-    const navBarTitles = navBar.titles.map((item) => {
+    const navBar = [
+        {
+            title: 'SHOP',
+            options: ['option1', 'option2']
+        },
+        {
+            title: 'FABRIC',
+            options: ['option1', 'option2']
+        },
+        {
+            title: 'JOURNAL',
+            options: ['option1', 'option2']
+        },
+        {
+            title: 'ABOUT',
+            options: ['option1', 'option2']
+        }
+    ];
+    const headerTitle = (title, options) => {
         return (
-            <NavDropdown title={item.title} id="navbarScrollingDropdown" className='title'>
-                {
-                    item.options.map((option) => {
-                        return (
-                            <NavDropdown.Item href={"#" + item.title.toLowerCase() + "-action" + i++}>{option}</NavDropdown.Item>
-                        )
-                    }
-                    )
-                }
-            </NavDropdown>
+            <>
+                <button className='title-button-txt'>{title}&#8595;</button>
+                {/* <GoArrowSmallDown className='arrow-down' size={50} /> */}
+            </>
+
         )
-    });
+    };
 
     return (
         <div className='nav-bar-div'>
-            <Navbar bg="light" expand="lg">
-                <Container fluid className=''>
-                    <Navbar.Brand href="#" className="matter-logo">matter</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Navbar.Collapse id="navbarScroll">
-                        <Nav
-                            className="me-auto my-2 my-lg-0"
-                            style={{ maxHeight: '100px' }}
-                            navbarScroll
-                        >
-                            {navBarTitles}
-                            <Nav.Link href="#login" className='title'>Login</Nav.Link>
-                            <Nav.Link href="#searchIcon"><BsSearch /></Nav.Link>
-                            <Nav.Link href="#favIcon"><MdFavoriteBorder /></Nav.Link>
-                            <Nav.Link href="#shopIcon"><BsFillBagFill /></Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+            <div className='title-container'>
+                <h2 id='matter'>matter</h2>
+                {
+                    navBar.map(item => {
+                        return (headerTitle(item.title, item.options))
+                    })
+                }
+            </div>
+            <div className='icon-container'>
+                <p className='title-button-txt login'>Login</p>
+                <BsSearch size={20}/>
+                <MdFavoriteBorder size={20} />
+                <BsFillBagFill size={20} />
+            </div>
         </div>
     );
 }

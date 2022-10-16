@@ -8,12 +8,15 @@ import NewArrivals from './components/NewArrivals';
 import Shop from './components/Shop';
 import Videos from './components/Videos';
 import AsSeenOn from './components/AsSeenOn';
+import Global from './components/Nav/01-Global';
 
 function App() {
   return (
     <>
-      <TopInfo />
-      {/* <Global /> */}
+      <div className='header-container'>
+        <TopInfo />
+        <Global />
+      </div>
       <div className='main-container'>
         <NewArrivals />
         <About />
