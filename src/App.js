@@ -6,6 +6,7 @@ import TopInfo from './components/Nav/02-Top Info';
 import About from './components/About';
 import NewArrivals from './components/NewArrivals';
 import Shop from './components/Shop';
+import Videos from './components/Videos';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <NewArrivals />
         <About />
         <Shop />
+        <Videos />
       </div>
 
       {/* <Slider /> */}
