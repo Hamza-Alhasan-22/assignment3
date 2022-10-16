@@ -63,5 +63,11 @@
     padding-right: 0;
 }
 .title-button:hover,.title-button:active{
-
+    text-decoration: underline;
+}
+.title-container button:hover,.title-container button:active{
+    text-decoration: underline;
+}
+.icon-container p:hover, .icon-container p:active {
+    text-decoration: underline;
 }
