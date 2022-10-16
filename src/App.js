@@ -7,6 +7,7 @@ import About from './components/About';
 import NewArrivals from './components/NewArrivals';
 import Shop from './components/Shop';
 import Videos from './components/Videos';
+import AsSeenOn from './components/AsSeenOn';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <About />
         <Shop />
         <Videos />
+        <AsSeenOn />
       </div>
 
       {/* <Slider /> */}
