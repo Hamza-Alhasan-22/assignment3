@@ -11,6 +11,7 @@ import AsSeenOn from './components/AsSeenOn';
 import Global from './components/Nav/01-Global';
 import Footer from './components/Footer';
 import Slider from './components/Slider';
+import Explore from './components/Explore';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <div className='main-container'>
         <NewArrivals />
         <About />
+        <Explore />
         <Shop />
         <Videos />
         <AsSeenOn />
