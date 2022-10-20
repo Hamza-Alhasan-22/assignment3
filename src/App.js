@@ -9,6 +9,7 @@ import Shop from './components/Shop';
 import Videos from './components/Videos';
 import AsSeenOn from './components/AsSeenOn';
 import Global from './components/Nav/01-Global';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         <Shop />
         <Videos />
         <AsSeenOn />
+      </div>
+      <div className='footer-container'>
+        <Footer />
       </div>
 
       {/* <Slider /> */}
