@@ -9,10 +9,12 @@ const Slider = (    )=>{
                 <div className="arrow left">
                 </div>
             </div>
+
             <div className="RightArrow arrowHover">
                 <div className="arrow right">
                 </div>
             </div>
+            
             <div className="content">
                 <span className="MySpan">Perfume Tips <br></br>Tricks</span>
                 <button className="MyButton">shop now</button>

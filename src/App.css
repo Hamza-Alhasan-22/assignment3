@@ -1,12 +1,21 @@
 .main-container{
     padding-left: 10.4%;
     padding-right: 10.4%;
-    padding-top: 7%;
+    padding-top: 1%;
 } 
 .header-container{
     z-index: 9;
     position: fixed;
     width: 100%;
+}
+.slider{
+    /* background-color: aqua; */
+    /* padding-top: 7%; */
+    padding-top: 126px;
+    background-image: url("./components/Slider/slider.png");
+    background-size: 100%;
+    /* background:no-repeat ; */
+    background-size: cover;
 }
 .footer-container{
     opacity: 1;
@@ -16,7 +25,7 @@
 
 
 
-@media only screen and (max-width: 990px) {
+/* @media only screen and (max-width: 990px) {
     .main-container{
         padding-top: 11%;
     }
@@ -40,4 +49,4 @@
     .main-container{
         padding-top: 40%;
     }
-}
+} */

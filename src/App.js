@@ -10,6 +10,7 @@ import Videos from './components/Videos';
 import AsSeenOn from './components/AsSeenOn';
 import Global from './components/Nav/01-Global';
 import Footer from './components/Footer';
+import Slider from './components/Slider';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       <div className='header-container'>
         <TopInfo />
         <Global />
+      </div>
+      <div className='slider'>
+        <Slider />
       </div>
       <div className='main-container'>
         <NewArrivals />
@@ -28,8 +32,6 @@ function App() {
       <div className='footer-container'>
         <Footer />
       </div>
-
-      {/* <Slider /> */}
     </>
   );
 }
