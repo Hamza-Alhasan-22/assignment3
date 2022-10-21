@@ -21,6 +21,8 @@
     text-align: left;
     line-height: 60px;
     padding-right: 9.8%;
+    display: flex;
+    align-items: center;
 }
 
 .title-container {
@@ -33,7 +35,7 @@
     align-items: center;
 }
 
-.icon-container > * {
+.icon-container>* {
     display: block;
     margin: 0;
     margin-left: 2vw;
@@ -51,7 +53,7 @@
     font-weight: 600;
     font-style: normal;
     letter-spacing: 1px;
-    text-align: left;
+    text-align: center;
     line-height: 40px;
     text-transform: uppercase;
 
@@ -59,15 +61,105 @@
     background-color: white;
     padding-right: 10%;
 }
-.login{
+
+.login {
     padding-right: 0;
 }
-.title-button:hover,.title-button:active{
+
+/* .title-button:hover,
+.title-button:active {
+    text-decoration: underline;
+} */
+
+.title-container button:hover,
+.title-container button:active {
     text-decoration: underline;
 }
-.title-container button:hover,.title-container button:active{
+
+.icon-container p:hover,
+.icon-container p:active {
     text-decoration: underline;
 }
-.icon-container p:hover, .icon-container p:active {
-    text-decoration: underline;
+
+.navbar-mobile,
+.container-mobile {
+    display: none;
+}
+
+.titles-mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-button{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+}
+
+@media only screen and (min-width: 880px) {
+    .titles-options {
+        display: flex;
+        flex-direction: column;
+        /* position: absolute; */
+    }
+    .nav-bar-div{
+        /* position: relative; */
+    }
+    .isActive{
+        margin-top: 10rem;
+    }
+}
+
+
+@media only screen and (max-width: 880px) {
+    .title-button{
+        padding-right: 0;
+    }
+    .title-container .title-button-txt {
+        display: none;
+    }
+
+    .container-mobile .title-button-txt {
+        padding-right: 0;
+        margin-top: 4%;
+        text-decoration: underline;
+    }
+
+    .icon-container {
+        display: none;
+    }
+
+    .navbar-mobile .icon-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 5%;
+        /* margin-left: -5.5%;
+        margin-right: 15%; */
+    }
+
+    .navbar-mobile .icon-container p {
+        width: 35%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-mobile {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(252, 252, 252);
+        margin-top: 94vh;
+        margin-right: 20vw;
+        position: absolute;
+        height: 84vh;
+        width: 49vw;
+        z-index: 9;
+    }
 }
