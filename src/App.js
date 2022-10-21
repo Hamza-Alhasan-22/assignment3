@@ -20,9 +20,7 @@ function App() {
         <TopInfo />
         <Global />
       </div>
-      <div className='slider'>
         <Slider />
-      </div>
       <div className='main-container'>
         <NewArrivals />
         <About />

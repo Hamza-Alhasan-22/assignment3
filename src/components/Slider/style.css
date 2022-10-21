@@ -1,4 +1,12 @@
-
+.slider{
+    /* background-color: aqua; */
+    /* padding-top: 7%; */
+    /* background:no-repeat ; */
+    /* padding-top: 126px;
+    background-image: url("./slider1.png");
+    background-size: 100%;
+    background-size: cover; */
+}
 .SlidesContainer{
     color: white;
     /* max-width: 1440px; */
