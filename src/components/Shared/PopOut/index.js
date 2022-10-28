@@ -5,25 +5,25 @@ import { BsQuestionSquare } from 'react-icons/bs'
 import Stars from '../Stars';
 
 function PopOut(props) {
-    const popOuts = [
-        {
-            id: 1,
-            title: '',
-            sideImgs: [],
-            data: {
-                title: '',
-                price: 0,
-                stars: 4.8,
-                description: '',
-                employment: '',
-                partnership: '',
-                collab: ''
-            }
-        }
-    ];
+    // const popOuts = [
+    //     {
+    //         id: 1,
+    //         title: '',
+    //         sideImgs: [],
+    //         data: {
+    //             title: '',
+    //             price: 0,
+    //             stars: 4.8,
+    //             description: '',
+    //             employment: '',
+    //             partnership: '',
+    //             collab: ''
+    //         }
+    //     }
+    // ];
     //sideImgs [array], mainImg(real img as component -not just path-)
 
-    const { quantity, setQuantity } = useState(1);
+    const [ quantity, setQuantity ] = useState(1);
     const handleQuantity = (check) => {
         //check = '+' or '-'
         check == '+' ? setQuantity(quantity + 1) :
@@ -31,10 +31,10 @@ function PopOut(props) {
             setQuantity(quantity - 1);
     };
 
-    const {mainImg, setMainImg} = useState(props.sideImgs[0])
-    const handleMainImg = (image) =>{
-        setMainImg(image);
-    };
+    // const [mainImg, setMainImg] = useState(props.sideImgs[0])
+    // const handleMainImg = (image) =>{
+    //     setMainImg(image);
+    // };
     
     const sizeButton = [1, 2, 3, 4];
 
@@ -52,7 +52,7 @@ function PopOut(props) {
         'size3',
         'size4'
     ];
-    const {sizeDiscription,setSizeDiscription} = useState(sizeGuidelines[0])
+    const [sizeDiscription,setSizeDiscription] = useState(sizeGuidelines[0])
     const handleSizeDiscription = (index) =>{
         setSizeDiscription(sizeGuidelines[index]);
     }
@@ -72,11 +72,9 @@ function PopOut(props) {
                     }
                 </div>
                 <div className='pop-out-img'>
-                    {mainImg}
+                    {props.mainImg}
                 </div>
                 <div className='pop-out-right'>
-                    {/*title, price, stars, description, 
-                    employment, partnership, collab*/}
                     <div className='right-title'>
                         <h2>{props.data.title}</h2>
                         <span>
@@ -106,7 +104,7 @@ function PopOut(props) {
                             <span className='size-buttons'>
                                 {sizeButton.map(item => {
                                     return (
-                                        <button onClick={()=>handleSizeDiscription(item)}>{item+1}</button>
+                                        <button onClick={()=>handleSizeDiscription(item-1)}>{item}</button>
                                     )
                                 })}
                             </span>

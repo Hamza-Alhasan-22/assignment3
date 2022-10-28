@@ -9,6 +9,13 @@
     display: flex;
     flex-direction: column;
 }
+.pop-out-container{
+    background-color: antiquewhite;
+    z-index: 5;
+    /* height: 55.41vw; */
+    height: 41.41vw;
+    width: 82.63vw;
+}
 .pop-out-title{
     display: flex;
     align-items: center;
@@ -16,6 +23,10 @@
 }
 .pop-out-data{
     display: flex;
+    margin-top: 2%;
+}
+.pop-out-right p,.pop-out-right h3{
+    margin: 0;
 }
 .pop-out-left{
     width: 5.7%;
