@@ -47,10 +47,10 @@ function PopOut(props) {
     // }
 
     const sizeGuidelines = [
-        'size1',
-        'size2',
-        'size3',
-        'size4'
+        'Model is a US Size 2-4, wears Matter Size 1. 175 cm tall.',
+        'Model is a US Size 4-6, wears Matter Size 2. 175 cm tall.',
+        'Model is a US Size 6-8, wears Matter Size 3. 175 cm tall.',
+        'Model is a US Size 8-10, wears Matter Size 4. 175 cm tall.'
     ];
     const [sizeDiscription,setSizeDiscription] = useState(sizeGuidelines[0])
     const handleSizeDiscription = (index) =>{
@@ -94,20 +94,20 @@ function PopOut(props) {
                         </span>
                     </div>
                     <div className='right-description'>
-                        <h3>Description</h3>
-                        <p>{props.data.description}</p>
+                        <h3 className='mobile-h3'>Description</h3>
+                        <p className='pop-p'>{props.data.description}</p>
                     </div>
                     <div className='right-employment'>
-                        <h3>Artisan Employment</h3>
-                        <p>{props.data.employment}</p>
+                        <h3 className='mobile-h3'>Artisan Employment</h3>
+                        <p className='pop-p'>{props.data.employment}</p>
                     </div>
                     <div className='right-partnership'>
-                        <h3>Partnership</h3>
-                        <p>{props.data.partnership}</p>
+                        <h3 className='mobile-h3'>Partnership</h3>
+                        <p className='pop-p'>{props.data.partnership}</p>
                     </div>
                     <div className='right-collab'>
-                        <h3>In Collab</h3>
-                        <p>{props.data.collab}</p>
+                        <h3 className='mobile-h3'>In Collab</h3>
+                        <p className='pop-p'>{props.data.collab}</p>
                     </div>
                     <div className='right-size'>
                         <p className='p1'>SIZE</p>
@@ -119,16 +119,16 @@ function PopOut(props) {
                                     )
                                 })}
                             </span>
-                            <p>SIZE GUIDELINES</p>
+                            <p className='p2'>SIZE GUIDELINES</p>
                         </div>
-                        <p className='p2'>{sizeDiscription}</p>
+                        <p className='p3'>{sizeDiscription}</p>
                     </div>
                     <div className='right-quantity'>
                         <p>QUANTITY</p>
                         <div>
                             <span className='adjust-span'>
                                 <button className='adjust-button' onClick={()=>{handleQuantity('-')}}>-</button>
-                                <button>{quantity}</button>
+                                <button className='q-button'>{quantity}</button>
                                 <button className='adjust-button' onClick={()=>{handleQuantity('+')}}>+</button>
                             </span>
                             <button className='add-to-cart'>Add to cart</button>
