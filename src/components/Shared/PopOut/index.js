@@ -56,11 +56,22 @@ function PopOut(props) {
     const handleSizeDiscription = (index) =>{
         setSizeDiscription(sizeGuidelines[index]);
     }
+
+
+    const [clicked, setClicked] = useState(true);
+    const handleClicked = () => {
+        setClicked(!clicked);
+    };
+
+
     return (
+        
+            clicked ?
+        
         <div className='pop-out-container'>
             <div className='pop-out-title'>
                 <p>{props.title}</p>
-                <FaTimes />
+                <FaTimes className='fatimes' onClick={() => handleClicked()} />
             </div>
             <div className='pop-out-data'>
                 <div className='pop-out-left'>
@@ -99,7 +110,7 @@ function PopOut(props) {
                         <p>{props.data.collab}</p>
                     </div>
                     <div className='right-size'>
-                        <p>SIZE</p>
+                        <p className='p1'>SIZE</p>
                         <div>
                             <span className='size-buttons'>
                                 {sizeButton.map(item => {
@@ -110,27 +121,28 @@ function PopOut(props) {
                             </span>
                             <p>SIZE GUIDELINES</p>
                         </div>
-                        <p>{sizeDiscription}</p>
+                        <p className='p2'>{sizeDiscription}</p>
                     </div>
                     <div className='right-quantity'>
                         <p>QUANTITY</p>
                         <div>
-                            <span>
-                                <button onClick={()=>{handleQuantity('-')}}>-</button>
+                            <span className='adjust-span'>
+                                <button className='adjust-button' onClick={()=>{handleQuantity('-')}}>-</button>
                                 <button>{quantity}</button>
-                                <button onClick={()=>{handleQuantity('+')}}>+</button>
+                                <button className='adjust-button' onClick={()=>{handleQuantity('+')}}>+</button>
                             </span>
-                            <button>Add to cart</button>
-                            <span>
+                            <button className='add-to-cart'>Add to cart</button>
+                            <span className='wishlist-span'>
                                 <BsQuestionSquare />
-                                <button>Add to wishlist</button>
+                                <button className='add-to-wishlist'>Add to wishlist</button>
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
-            <button>View full product details</button>
+            <button className='view-button'>View full product details</button>
         </div>
+    :<></>
     );
 }
 
