@@ -3,7 +3,14 @@
     flex-direction: column;
     position: relative;
 }
-
+.card:hover{
+    opacity: 0.8;
+    /* cursor: pointer; */
+}
+.card-button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
 /* .card-img {
     position: relative;
 } */
