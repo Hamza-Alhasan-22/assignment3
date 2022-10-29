@@ -10,7 +10,7 @@
 }
 
 .pop-out-container button:hover,
-.pop-out-left img:hover{
+.pop-out-left img:hover {
     opacity: 0.8;
     cursor: pointer;
 }
@@ -34,17 +34,17 @@
     background-color: rgba(255, 255, 255, 1);
     height: 9.1%;
 
-color: rgba(3,3,3,1);
-font-family: "ProximaNova-Light";
-font-size: 18px;
-font-weight: 300;
-font-style: normal;
-letter-spacing: 0px;
-text-align: left;
-line-height: 40px;
+    color: rgba(3, 3, 3, 1);
+    font-family: "ProximaNova-Light";
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 40px;
 }
 
-.pop-out-title p{
+.pop-out-title p {
     margin-left: 2.1%;
 }
 
@@ -136,10 +136,11 @@ line-height: 40px;
     height: 2vw;
     margin-right: 4%;
 }
-.q-button{
-    border: 1px solid rgba(222,222,222, 1);
-opacity: 1;
-background-color: rgba(255,255,255, 1);
+
+.q-button {
+    border: 1px solid rgba(222, 222, 222, 1);
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .size-buttons button:hover,
@@ -199,7 +200,7 @@ background-color: rgba(255,255,255, 1);
 
 .adjust-span button {
     width: 33.3%;
-    border: 1px solid rgba(222,222,222, 1);
+    border: 1px solid rgba(222, 222, 222, 1);
 }
 
 .right-quantity {
@@ -241,17 +242,17 @@ background-color: rgba(255,255,255, 1);
     align-items: center;
 }
 
-.right-size .p2{
+.right-size .p2 {
     opacity: 1;
-color: rgba(51,51,58,1);
-font-family: "ProximaNova-Semibold";
-font-size: 12px;
-font-weight: 600;
-font-style: normal;
-letter-spacing: 1px;
-text-align: left;
-line-height: 40px;
-text-transform: uppercase;
+    color: rgba(51, 51, 58, 1);
+    font-family: "ProximaNova-Semibold";
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 40px;
+    text-transform: uppercase;
 }
 
 .right-size .p2 {
@@ -361,9 +362,10 @@ text-transform: uppercase;
     text-align: justified;
     line-height: 20px;
 }
-.right-size .p3{
+
+.right-size .p3 {
     opacity: 1;
-    color: rgba(102,102,102,1);
+    color: rgba(102, 102, 102, 1);
     font-family: "ProximaNova-Regular";
     font-size: 12px;
     font-weight: 400;
@@ -374,59 +376,80 @@ text-transform: uppercase;
 }
 
 @media only screen and (max-width: 570px) {
-    .pop-out-container{
+    .pop-out-container {
         height: 90vh;
     }
+
     .pop-out-data {
         flex-direction: column;
         justify-content: space-between;
     }
-    .pop-out-title{
+
+    .pop-out-title {
         height: 5%;
     }
+
     .pop-out-left {
         flex-direction: row;
         width: 10vw;
         height: 14vw;
     }
+
     .pop-out-left img {
         margin-right: 4vw;
     }
+
     .pop-out-img {
         align-self: center;
     }
+
     .pop-out-right {
         width: 100%;
     }
-    .view-button{
+
+    .view-button {
         margin-top: 0;
         width: 67%;
     }
+
     .right-description h3 {
         margin-top: 0;
         margin-bottom: 0.5%;
     }
+
     .right-description p {
         font-size: 3vw;
     }
-    .right-quantity p{
+
+    .right-quantity p {
         margin-top: 3%;
     }
-    .right-employment{
+
+    .right-employment {
         margin-top: 2.7%;
     }
-    .right-title h2{
+
+    .right-title h2 {
         font-size: 4vw;
     }
-    .right-title span p{
+
+    .right-title span p {
         font-size: 4vw;
     }
-    .mobile-h3{
+
+    .mobile-h3 {
         font-size: 3.5vw;
     }
-    .add-to-cart,.add-to-wishlist{
+
+    .add-to-cart,
+    .add-to-wishlist {
         font-size: 2.3vw;
         line-height: 2.5vw;
     }
+    .size-buttons button {
+        width: 9vw;
+        height: 5vw;
+        margin-right: 2vw;
+        /* text-align: center; */
+    }
 }
-
